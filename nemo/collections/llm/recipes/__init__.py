@@ -69,7 +69,7 @@ from nemo.collections.llm.recipes import (
     t5_220m,
 )
 from nemo.collections.llm.recipes.log.default import default_log, default_resume
-from nemo.collections.llm.recipes.optim import adam
+from nemo.collections.llm.recipes.optim import adam, sgd
 
 __all__ = [
     "baichuan2_7b",
@@ -126,6 +126,7 @@ __all__ = [
     "gemma2_9b",
     "gemma2_27b",
     "adam",
+    "sgd",
     "default_log",
     "default_resume",
 ]
