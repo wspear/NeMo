@@ -125,6 +125,7 @@ def model_to_trtllm_ckpt(
             inference_tp_size=tensor_parallel_size,
             inference_pp_size=pipeline_parallel_size,
             tokenizer_vocab_size=vocab_size,
+            decoder_type=decoder_type,
             fp8_quantized=fp8_quantized,
             fp8_kvcache=fp8_kvcache,
         )
